@@ -1,0 +1,68 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    background-color:black;
+    overflow-y:hidden;
+}
+
+.area{
+    width: 1000px;
+    height: 500px;
+    border:1px solid white;
+    box-shadow: white;
+    background-image: url("./Space.png");
+    margin:100px auto;
+    position: relative;
+    overflow: hidden;
+  
+    
+   
+}
+
+p{
+    text-align: center;
+    color: white;
+}
+
+.blueboy {
+    position: absolute;
+     margin-top:390px;
+     z-index: 11;
+    width:90px;
+    height:110px;
+     
+} 
+
+.animated{
+    animation: jumpup 0.5s linear ;
+}
+
+ @keyframes jumpup{
+    0%{margin-top: 380px;}
+    35%{margin-top: 200px;}
+   
+    75%{margin-top:200px;}
+    100%{margin-top: 380px; }
+
+}
+.redboy{
+    position: absolute;
+    top: 392px;
+    left: 910px;
+    width:90px;
+    height:108px;
+    animation: moveLeft  1.5s linear infinite;
+    z-index: 10;
+}
+
+@keyframes moveLeft{
+    0%{left: 910px;}
+    
+    100%{left: -60px;}
+
+}
+
+ 
