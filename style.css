@@ -54,8 +54,12 @@ p{
     left: 910px;
     width:90px;
     height:108px;
-    animation: moveLeft  1.5s linear infinite;
+    
     z-index: 10;
+}
+
+.move{
+    animation: moveLeft  1.5s linear infinite;
 }
 
 @keyframes moveLeft{
