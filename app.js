@@ -23,6 +23,14 @@ document.addEventListener('keypress' , ()=>{
     jump();
 }) 
 
+function myStart(){
+    red.classList.add("move");
+    $(document).ready(function(){
+        $("button").click(function(){
+            $(this).hide();
+        });
+    });
+
 setInterval(()=>{
     ptn.innerText++;
     const blueTop = blue.offsetTop;
@@ -38,3 +46,4 @@ setInterval(()=>{
 
 
 },50)
+}
